@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(13, 14, 14);
+}
+
+
+.algorithm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#bubble,#selection,#insertion,#merge,#quick {
+    font-size: 30px;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px 50px;
+    background-color: rgb(162, 49, 49);
+    box-shadow: 4px 4px 7px white;
+}
+
+#bubble:hover , #selection:hover,#insertion:hover,#merge:hover,#quick:hover {
+    background-color: rgba(19, 61, 211, 0.626);
+    cursor: pointer;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+    <h1 id="putalgo" style="font-size: 50px; color: azure ; text-shadow: 2px 2px 5px rgb(247, 240, 240);"></h1>
+
+    <p class="content">Note : Blue means Comparing and Red means Swaps</p>
+    
+    <div class="con">
+        <label style="font-size: 20px;">Set the size of array:</label>
+        <p id="size" style="font-size: 20px;"></p>
+        <input type="range" id="sizerange" name="points" min="5" max="100" onchange="setSize()">
+        <label style="font-size: 20px;">Speed:</label>
+        <p id="speed" style="font-size: 20px;"></p>
+        <input type="range" id="speedrange" name="points" min="1" max="10" onchange="setSpeed()">
+    </div>
+
+    <div id="container"></div>
+
+    <hr>
+
+    <div>
+        <button id="init" onclick="init()">Initialize</button>
+        <button id="play" onclick="play()">Sort</button>
+    </div>
+
+    <button id="back" onclick="window.location.href='index.html';">Back</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
