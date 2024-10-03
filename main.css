@@ -1,70 +1,223 @@
-#container{
-    height: 200px;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    font-size: 3.5rem; 
+    color: rgb(202, 234, 234) ; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.shadow-sm {
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.my-5 {
+    margin-top: 1.25rem /* 20px */;
+    margin-bottom: 1.25rem /* 20px */;
+}
+
+.container{
+    height: 12.5rem;
     display: flex;
     align-items: flex-end;
 }
 
-body{
+.body{
+    width: 100vw;
+    height: 100vh;
     color: azure;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(13, 14, 14);
+    background-color: rgb(33, 35, 35);
 }
 
 .bar{
-    width: 10px;
+    width: 0.6rem;
     background-color: rgb(252, 248, 248);
     margin: 1px;
 }
 
-.option{
-    margin: 5px 10px;
-    padding: 10px;
+.option {
+    margin: 0.3125rem 0.625rem; /* 5px = 0.3125rem, 10px = 0.625rem */
+    padding: 0.625rem; /* 10px = 0.625rem */
     align-items: center;
-    font-size: 25px;
+    font-size: 1.5625rem; /* 25px = 1.5625rem */
 }
 
-.con{
+.flex{
+    display: flex;
+    gap: 5rem;
+}
+
+.nav{
     display: flex;
     align-items: center;
     flex-direction: row;
 }
+.label{
+    font-size: 1.25rem;
+    font-family: monospace;
+}
 
 #sizerange,#speedrange{
-    margin: 20px;
+    margin: 1.25rem;
+}
+.text-xl {
+    font-size: 1.25rem /* 20px */;
+    line-height: 1.75rem /* 28px */;
+    font-family: monospace;
+}
+.my-7 {
+    margin-top: 2rem /* 28px */;
+    margin-bottom: 2rem /* 28px */;
 }
 
-#back{
-    padding: 20px;
-    margin: 30px;
-    width: 200px;
-    height: 80px;
-    font-size: 30px;
-    background-color: rgb(162, 49, 49);
-    box-shadow: 4px 4px 7px white;
+.btn-56,
+.btn-56 *,
+.btn-56 :after,
+.btn-56 :before,
+.btn-56:after,
+.btn-56:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-56 {
+  -webkit-tap-highlight-color: 
+transparent;
+  -webkit-appearance: button;
+  background-color: 
+#000;
+  background-image: none;
+  color: 
+#fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-56:disabled {
+  cursor: default;
+}
+.btn-56:-moz-focusring {
+  outline: auto;
+}
+.btn-56 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-56 [hidden] {
+  display: none;
+}
+.btn-56 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-56:hover {
+  -webkit-animation: pulse 0.5s;
+  animation: pulse 0.5s;
+  box-shadow: 0 0 0 2em 
+transparent;
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 
+#fff;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 
+#fff;
+  }
 }
 
-#init,#play{
-    padding: 20px;
-    margin: 30px;
-    width: 150px;
-    height: 80px;
-    font-size: 20px;
-    background-color: rgb(18, 216, 28);
-    box-shadow: 4px 4px 7px white;
+.btn-77,
+.btn-77 *,
+.btn-77 :after,
+.btn-77 :before,
+.btn-77:after,
+.btn-77:before {
+  border: 0 solid;
+  box-sizing: border-box;
 }
-
-#back:hover {
-    background-color: rgba(19, 61, 211, 0.626);
-    cursor: pointer;
+.btn-77 {
+  -webkit-tap-highlight-color: 
+transparent;
+  -webkit-appearance: button;
+  background-color: 
+#000;
+  background-image: none;
+  color: 
+#fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
 }
-
-#init:hover , #play:hover{
-    background-color: rgba(19, 61, 211, 0.626);
-    cursor: pointer;
+.btn-77:disabled {
+  cursor: default;
 }
-
-.content{
-    font-size: 20px;
+.btn-77:-moz-focusring {
+  outline: auto;
+}
+.btn-77 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-77 [hidden] {
+  display: none;
+}
+.btn-77 {
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  border: 1px solid;
+  border-radius: 999px;
+  box-shadow: 0 0 0 2em 
+transparent;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 
+#fff;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 
+#fff;
+  }
 }

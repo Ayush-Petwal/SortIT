@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorting Visualizer</title>
+    <title>Sort It</title>
     <link rel="stylesheet" href="main.css"/>
 </head>
 <body>
-    <h1 id="putalgo" style="font-size: 50px; color: azure ; text-shadow: 2px 2px 5px rgb(247, 240, 240);"></h1>
-
-    <p class="content">Note : Blue means Comparing and Red means Swaps</p>
     
-    <div class="con">
-        <label style="font-size: 20px;">Set the size of array:</label>
-        <p id="size" style="font-size: 20px;"></p>
-        <input type="range" id="sizerange" name="points" min="5" max="100" onchange="setSize()">
-        <label style="font-size: 20px;">Speed:</label>
-        <p id="speed" style="font-size: 20px;"></p>
-        <input type="range" id="speedrange" name="points" min="1" max="10" onchange="setSpeed()">
+    <div class="body">
+        <h1 id="putalgo" class="heading shadow-sm my-5"></h1>
+
+        <p class="text-xl ">Note : Blue means Comparing and Red means Swaps</p>
+        
+        <div class="nav">
+            <label class="label">Set the size of array:</label>
+            <p id="size" class="label""></p>
+            <input type="range" id="sizerange" name="points" min="5" max="100" onchange="setSize()">
+            <label class="label">Speed:</label>
+            <p id="speed" class="label"></p>
+            <input type="range" id="speedrange" name="points" min="1" max="10" onchange="setSpeed()">
+        </div>
+
+        <div id="container" class="container"></div>
+
+        <hr>
+
+        <div class="flex my-7">     
+            <button id="init" class="btn-56" onclick="init()">Initialize</button>
+            <button id="play" class="btn-77" onclick="play()">Sort</button>
+        </div>
+
+        <button id="back" class="btn-56" onclick="window.location.href='index.html';">Back</button>
     </div>
-
-    <div id="container"></div>
-
-    <hr>
-
-    <div>
-        <button id="init" onclick="init()">Initialize</button>
-        <button id="play" onclick="play()">Sort</button>
-    </div>
-
-    <button id="back" onclick="window.location.href='index.html';">Back</button>
 
     <script src="script.js"></script>
 </body>

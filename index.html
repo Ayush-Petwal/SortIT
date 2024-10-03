@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorting Visualizer</title>
+    <title>Sort It</title>
     <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
-    <h1 style="font-size: 50px; color: azure ; text-shadow: 2px 2px 5px rgb(247, 240, 240);">Sort It</h1>
+
+    <div class="container">
+        <h1 class="heading shadow-md my-5 ">Sort It</h1>
     
-    <div class="algorithm">
-        <div id="row1" style="display: flex;align-items: center;flex-direction: row;">
-            <button id="bubble" onclick="window.location.href='main.html?algo=Bubble Sort';">Bubble Sort</button>
-            <button id="selection" onclick="window.location.href='main.html?algo=Selection Sort';">Selection Sort</button>
+        <div class="main">
+            <div id="row1" class="row">
+                <button class="btn-56" onclick="window.location.href='main.html?algo=Bubble Sort';">Bubble Sort</button>
+                <button class="btn-56" onclick="window.location.href='main.html?algo=Selection Sort';">Selection Sort</button>
+            </div>
+            <div id="row2" class="row">
+                <button class="btn-56" onclick="window.location.href='main.html?algo=Insertion Sort';">Insertion Sort</button>
+                <button class="btn-56" onclick="window.location.href='main.html?algo=Merge Sort';">Merge Sort</button>
+            </div>
+            <button class="btn-56" onclick="window.location.href='main.html?algo=Quick Sort';">Quick Sort</button>
         </div>
-        <div id="row2" style="display: flex;align-items: center;flex-direction: row;">
-            <button id="insertion" onclick="window.location.href='main.html?algo=Insertion Sort';">Insertion Sort</button>
-            <button id="merge" onclick="window.location.href='main.html?algo=Merge Sort';">Merge Sort</button>
-        </div>
-        <button id="quick" onclick="window.location.href='main.html?algo=Quick Sort';">Quick Sort</button>
     </div>
 
 </body>
